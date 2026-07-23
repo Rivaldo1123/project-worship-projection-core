@@ -1,0 +1,54 @@
+{
+  "name": "@project-worship/projection-core",
+  "version": "0.1.0",
+  "description": "Framework-independent TypeScript state engine for dependable worship and live-event projection.",
+  "license": "MIT",
+  "author": "Rivaldo Lewis / Valdo Enterprises",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rivaldo1123/project-worship-projection-core.git"
+  },
+  "homepage": "https://github.com/Rivaldo1123/project-worship-projection-core#readme",
+  "bugs": {
+    "url": "https://github.com/Rivaldo1123/project-worship-projection-core/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --coverage",
+    "test:watch": "vitest",
+    "check": "npm run typecheck && npm test && npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "projection",
+    "worship",
+    "church-tech",
+    "presentation",
+    "electron",
+    "typescript",
+    "live-events",
+    "dual-display"
+  ],
+  "devDependencies": {
+    "@vitest/coverage-v8": "^2.1.9",
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.9"
+  }
+}
